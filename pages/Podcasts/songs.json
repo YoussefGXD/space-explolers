@@ -1,0 +1,72 @@
+{
+  "songs": [
+    {
+      "json": "https://jewel998.github.io/playlist/data/Daughter-Youth.json",
+      "audio": "في يوم وليلة من أجمل اغاني الفنانه ورده - YouTube.mp3"
+    },
+    {
+      "author": "Novo Amor",
+      "song": "State Lines",
+      "json": "https://jewel998.github.io/playlist/data/NovoAmor-StateLines.json",
+      "audio": "https://jewel998.github.io/playlist/music/NovoAmor-StateLines.mp3"
+    },
+    {
+      "author": "Lewis Capaldi",
+      "song": "Someone You Loved",
+      "json": "https://jewel998.github.io/playlist/data/LewisCapaldi-SomeoneYouLoved.json",
+      "audio": "https://jewel998.github.io/playlist/music/LewisCapaldi-SomeoneYouLoved.mp3"
+    },
+    {
+      "author": "Yutaka Yamada",
+      "song": "Remembering",
+      "json": "https://jewel998.github.io/playlist/data/YutakaYamada-Remembering.json",
+      "audio": "https://jewel998.github.io/playlist/music/YutakaYamada-Remembering.mp3"
+    },
+    {
+      "author": "David Choi",
+      "song": "By My Side",
+      "json": "https://jewel998.github.io/playlist/data/DavidChoi-ByMySide.json",
+      "audio": "https://jewel998.github.io/playlist/music/DavidChoi-ByMySide.mp3"
+    },
+    {
+      "audio": "https://jewel998.github.io/playlist/music/DavidChoi-ByMySide.mp3",
+      "json": "https://jewel998.github.io/playlist/data/Marshmelloft.Bastille-Happier.json"
+    },
+    {
+      "song": "Up Up & Away",
+      "author": "Chance Peña",
+      "json": "https://jewel998.github.io/playlist/data/ChancePena-UpUp&Away.json",
+      "audio": "https://jewel998.github.io/playlist/music/ChancePena-UpUp&Away.mp3"
+    },
+    {
+      "author": "HONNE",
+      "song": "Me & You",
+      "json": "https://jewel998.github.io/playlist/data/HONNE-Me&You.json",
+      "audio": "https://jewel998.github.io/playlist/music/HONNE-Me&You.mp3"
+    },
+    {
+      "song": "Don't Let Me Fall",
+      "author": "Lenka",
+      "json": "https://jewel998.github.io/playlist/data/Lenka-DontLetMeFall.json",
+      "audio": "https://jewel998.github.io/playlist/music/Lenka-DontLetMeFall.mp3"
+    },
+    {
+      "author": "Explosions In The Sky",
+      "song": "Your Hand In Mine",
+      "json": "https://jewel998.github.io/playlist/data/ExplosionsInTheSky-YourHandInMine.json",
+      "audio": "https://jewel998.github.io/playlist/music/ExplosionsInTheSky-YourHandInMine.mp3"
+    },
+    {
+      "author": "Birdy",
+      "song": "The District Sleeps Alone Tonight",
+      "json": "https://jewel998.github.io/playlist/data/Birdy-TheDistrictSleepsAloneTonight.json",
+      "audio": "https://jewel998.github.io/playlist/music/Birdy-TheDistrictSleepsAloneTonight.mp3"
+    },
+    {
+      "song": "Shallows",
+      "author": "Daughter",
+      "json": "https://jewel998.github.io/playlist/data/Daughter-Shallows.json",
+      "audio": "https://jewel998.github.io/playlist/music/Daughter-Shallows.mp3"
+    }
+  ]
+}

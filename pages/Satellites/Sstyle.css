@@ -1,0 +1,733 @@
+/* system */
+:root {
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(142, 90%, 61%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  min-height: 100vh;
+  place-items: center;
+  line-height: 1.6;
+  background: var(--clr-neutral-900);
+  font-family: sans-serif;
+}
+.card {
+  color: var(--clr-neutral-100);
+  background-image: url(https://img.etimg.com/thumb/msid-89631138,width-1200,height-900,imgsize-70174,resizemode-8,quality-100/small-biz/entrepreneurshipare-generating-tonnes-of-data-in-space-beaming-it-back-to-earth-is-a-problem.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  margin-top: 110px;
+  max-width: 35ch;
+  max-height: 439px;
+  min-width: 35ch;
+  min-height: 439px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+  transform: translateY(70%);
+  transition: transform 500ms ease;
+}
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+.card:hover .card-content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+.card:hover .card-content > *:not(.card-title) {
+  opacity: 1;
+  transition-delay: 1000ms;
+}
+.card-title {
+  position: relative;
+  width: max-content;
+}
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  left: calc(var(--padding) * -1);
+  bottom: -2px;
+  width: calc(100% + var(--padding));
+  background: var(--clr-accent-400);
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.card:hover .card-title::after {
+  transform: scale(1);
+}
+.card-body {
+  color: rgb(255, 255, 255 / 0.85);
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-neutral-100);
+  color: black;
+}
+/* End System */
+
+/* START NAV BAR */
+nav {
+  position: absolute;
+  top: 25px;
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #909090;
+}
+a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--clr-accent-400);
+  bottom: -7px;
+  transition: all 500ms ease;
+}
+a:hover,
+.active {
+  color: white;
+}
+a:hover::before {
+  width: 100%;
+}
+.active::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--clr-accent-400);
+  bottom: -7px;
+}
+/* END NAV BAR */
+
+/* Cards */
+.card-1 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TIROS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-2 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-3 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ESSA.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-4 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 2.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-5 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ATS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-6 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 3.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-7 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 4.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-8 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 5.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-9 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SMS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-10 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 6.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-11 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GOES\ A-C.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-12 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Seasat\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-13 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Nimbus\ 7.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-14 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GOES\ D-H.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-15 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/DE\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-16 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/DE\ 2.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-17 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/MOMS.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-18 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ERBS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-19 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GEOSAT.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-20 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/MOS\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-21 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CRRESS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-22 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ERS\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-23 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/UARS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-24 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ATLAS\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-25 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TOPEX.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-26 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/NOAA-POES.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-27 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GOES\ I-M.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-28 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SIR-C.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-29 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Radarsat.jpg);
+  background-size: 312px 439px;
+  padding-top: 6.7rem;
+}
+.card-30 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TOMS-EP.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-31 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ADEOS.jpg);
+  background-size: 312px 439px;
+  padding-top: 6.5rem;
+}
+.card-32 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SeaWiFS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-33 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TRMM.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-34 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Landsat\ 7.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-35 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/QuikSCAT.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-36 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Terra.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-37 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ACRIMSAT.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-38 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SRTM.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-39 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CHAMP.jpg);
+  background-size: 312px 439px;
+  padding-top: 6.5rem;
+}
+.card-40 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/EO-1.jpg);
+  background-size: 312px 439px;
+  padding-top: 6.5rem;
+}
+.card-41 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Jason-1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-42 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SAGE-III.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-43 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GRACE.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-44 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Aqua.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-45 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ADEOS\ 2.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-46 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Icesat.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-47 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SORCE.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-48 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Aura.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-49 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/PARASOL.jpg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-50 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/NOAA-N.jpg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-51 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GOES\ N-O-P.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-52 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Calipso.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-53 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CloudSat.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-54 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/OSTM.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-55 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/OCO.jpg);
+  background-size: 312px 439px;
+  padding-top: 5.9rem;
+}
+.card-56 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Glory.jpg);
+  background-size: 312px 439px;
+  padding-top: 5.9rem;
+}
+.card-57 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Aquarius.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-58 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Soumi.jpg);
+  background-size: 312px 439px;
+  padding-top: 5.9rem;
+}
+.card-59 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GCOM.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-60 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Landsat\ 8.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-61 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GPM.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-62 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/OCO-2.jpg);
+  background-size: 312px 439px;
+  padding-top: 5.9rem;
+}
+.card-63 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ISS-RapidScat.jpg);
+  background-size: 312px 439px;
+  padding-top: 4.8rem;
+}
+.card-64 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SMAP.jpg);
+  background-size: 312px 439px;
+  padding-top: 6rem;
+}
+.card-65 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CATS.jpg);
+  background-size: 312px 439px;
+  padding-top: 4.6rem;
+}
+.card-66 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/DSCOVR.jpg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-67 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Jason-3.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-68 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GOES-16.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-69 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CYGNSS.jpeg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-70 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SAGEIII-ISS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-71 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/LIS-ISS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-72 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/JPSS-1.jpg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-73 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TSIS\ 1.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-74 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GRACE-FO.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-75 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/ECOSTRESS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-76 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Icesat\ 2.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-77 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GEDI.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-78 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/OCO-3.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-79 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/CLARREO.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-80 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Sentinel-6.jpg);
+  background-size: 312px 439px;
+  padding-top: 8rem;
+}
+.card-81 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/JPSS-2.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-82 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/MAIA.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-83 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/LANDSAT-9.jpg);
+  background-size: 312px 439px;
+  padding-top: 6.6rem;
+}
+.card-84 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/EMIT.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-85 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TROPICS.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-86 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TEMPO.jpeg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-87 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/NI-SAR.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-88 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/SWOT.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-89 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/PREFIRE.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-90 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GeoCarb.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-91 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/PACE.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-92 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/TSIS\ 2.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-93 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/Sentinel-6B.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-94 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/GLIMR.png);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+.card-95 {
+  /* اللون مجرد تجربة امسحة وحط الصور */
+  background: url(imgs/JPSS-3.jpg);
+  background-size: 312px 439px;
+  padding-top: 7rem;
+}
+/* End Cards */
+@media only screen and (max-width: 1300px) {
+  body {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 968px) {
+  body {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (max-width: 658px) {
+  body {
+    grid-template-columns: auto;
+  }
+}
